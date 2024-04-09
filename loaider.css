@@ -1,0 +1,51 @@
+.outer{
+    height: 10px;
+    width: 49px;
+   border: 2px solid rgba(0, 0, 0, 0.594);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+    right: 50%;
+    bottom: 50%;
+
+   
+
+}
+@keyframes load {
+    0%{
+width: 0%;
+    }
+    25%{
+        width: 0%;
+}
+50%{
+width: 100%;
+}
+    
+75%{
+width: 100%;
+}
+100%{
+width: 0%;
+}
+}
+.inner{
+    height: 6px;
+    width: 45px;
+   background-color: rgba(8, 234, 136, 0.703);
+   border: 1px dashed blue;
+   font-size: 1%;
+    text-align:center;
+   animation-name: load;
+   animation-duration: 2s;
+   animation-timing-function:ease;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   transition-property:all;
+   transition-delay: 1s;
+
+}
+
+
